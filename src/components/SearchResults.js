@@ -78,7 +78,7 @@ export default function SearchResults() {
     return (
       <div className="mt-3 p-8 bg-gray-50 border border-gray-200 rounded-lg text-center">
         <FileText className="w-12 h-12 text-gray-300 mx-auto mb-3" />
-        <p className="text-gray-600 font-medium">No materials found for "{searchQuery}"</p>
+        <p className="text-gray-600 font-medium">No materials found for &quot;{searchQuery}&quot;</p>
         <p className="text-sm text-gray-500 mt-1">Try a different search term or check your spelling</p>
       </div>
     )

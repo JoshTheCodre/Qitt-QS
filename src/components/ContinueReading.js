@@ -44,6 +44,7 @@ export function ContinueReading({
 
   useEffect(() => {
     loadRecentMaterials()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.uid])
 
   if (loading) {

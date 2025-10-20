@@ -47,6 +47,7 @@ export default function ExploreSearch() {
     if (searchQuery && searchQuery !== inputValue) {
       setInputValue(searchQuery)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery])
 
   return (
