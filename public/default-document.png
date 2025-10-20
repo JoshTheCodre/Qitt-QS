@@ -1,0 +1,18 @@
+<!-- This is a placeholder. In a real implementation, you would use an actual PNG image.
+For now, let's create an SVG that can serve as a fallback -->
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="500" fill="#f3f4f6"/>
+  <g transform="translate(200, 250)">
+    <!-- Document icon -->
+    <path d="M-40,-60 L-40,60 L40,60 L40,-30 L10,-60 Z" fill="#d1d5db" stroke="#9ca3af" stroke-width="2"/>
+    <path d="M10,-60 L10,-30 L40,-30" fill="none" stroke="#9ca3af" stroke-width="2"/>
+    <!-- Lines representing text -->
+    <line x1="-25" y1="-40" x2="25" y2="-40" stroke="#9ca3af" stroke-width="3"/>
+    <line x1="-25" y1="-20" x2="25" y2="-20" stroke="#9ca3af" stroke-width="3"/>
+    <line x1="-25" y1="0" x2="25" y2="0" stroke="#9ca3af" stroke-width="3"/>
+    <line x1="-25" y1="20" x2="15" y2="20" stroke="#9ca3af" stroke-width="3"/>
+  </g>
+  <text x="200" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#6b7280">
+    Document Preview
+  </text>
+</svg>
