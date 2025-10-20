@@ -345,12 +345,12 @@ export function FileUploadForm() {
             </Button>
 
             {/* Points Banner */}
-            <div className="p-3 sm:p-4 bg-gradient-to-r from-[#0A32F8]/10 to-[#0A32F8]/5 rounded-lg border border-[#0A32F8]/20 flex items-center justify-center gap-2 shadow-sm">
+            {/* <div className="p-3 sm:p-4 bg-gradient-to-r from-[#0A32F8]/10 to-[#0A32F8]/5 rounded-lg border border-[#0A32F8]/20 flex items-center justify-center gap-2 shadow-sm">
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-[#0A32F8]/20 flex items-center justify-center">
                 <Zap className="w-3 h-3 sm:w-4 sm:h-4 text-[#0A32F8]" fill="#0A32F8" />
               </div>
               <p className="text-[#0A32F8] text-xs sm:text-sm font-bold">Earn 20+ points for every approved upload</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
