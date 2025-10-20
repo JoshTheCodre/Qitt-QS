@@ -74,7 +74,7 @@ function AccountPage() {
         <div className="px-4 lg:px-0 max-w-2xl mx-auto">
 
           {/* Profile Card */}
-          <div className="bg-white rounded-lg p-8 border border-gray-200 mb-6 shadow-sm">
+          <div className="bg-white rounded-lg p-4 lg:p-8 border border-gray-200 mb-6 shadow-sm">
             <div className="flex flex-col items-center text-center mb-6">
               <div className="relative mb-4">
                 <Avatar className="h-24 w-24">
@@ -119,7 +119,7 @@ function AccountPage() {
             </div>
 
             {/* Profile Details */}
-            <div className="bg-gray-50 rounded-lg p-4 space-y-2.5">
+            <div className="bg-gray-50 rounded-lg p-3 lg:p-4 space-y-2.5">
               <div className="flex items-center gap-2.5 p-2 bg-white rounded-md shadow-sm">
                 <div className="w-8 h-8 rounded-full bg-[#0A32F8]/10 flex items-center justify-center flex-shrink-0">
                   <Mail className="h-4 w-4 text-[#0A32F8]" />

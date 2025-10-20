@@ -94,7 +94,7 @@ export function ContinueReading({
       {/* Horizontal row layout */}
       <div className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide">
         {recentMaterials.map((material) => (
-          <div key={material.id} className="flex-shrink-0 w-2/3 sm:w-[calc(50%-6px)] lg:w-[calc(33.333%-8px)]">
+          <div key={material.id} className="flex-shrink-0 w-4/5 lg:w-2/3  sm:w-[calc(50%-6px)] lg:w-[calc(33.333%-8px)]">
             <ContinueReadingCard
               id={material.id}
               code={material.courseCode || material.code}
