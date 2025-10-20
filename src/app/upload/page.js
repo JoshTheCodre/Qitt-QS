@@ -54,7 +54,7 @@ function UploadPage() {
                 }`}>
                   {canUpload 
                     ? `You have ${remainingUploads} upload${remainingUploads !== 1 ? 's' : ''} remaining today (${uploadsToday}/${dailyUploadLimit} used)`
-                    : `You've reached your daily upload limit of ${dailyUploadLimit}. Please try again tomorrow.`
+                    : `You&apos;ve reached your daily upload limit of ${dailyUploadLimit}. Please try again tomorrow.`
                   }
                 </p>
               </div>
@@ -68,7 +68,7 @@ function UploadPage() {
               <div className="text-6xl mb-4">📤</div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Upload Limit Reached</h3>
               <p className="text-gray-600">
-                You've uploaded {dailyUploadLimit} materials today. Come back tomorrow to share more!
+                You&apos;ve uploaded {dailyUploadLimit} materials today. Come back tomorrow to share more!
               </p>
             </div>
           )}

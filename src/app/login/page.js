@@ -202,7 +202,7 @@ function LoginPage() {
                     </Button>
 
                     <p className="text-center text-[14px] text-[#899cc9]">
-                        Don't have an account? <a href="/register" className="font-medium text-[#4045ef] hover:underline">Sign up</a>
+                        Don&apos;t have an account? <a href="/register" className="font-medium text-[#4045ef] hover:underline">Sign up</a>
                     </p>
                 </div>
             </div>
