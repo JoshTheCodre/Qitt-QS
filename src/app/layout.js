@@ -1,8 +1,21 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Qitt-QS',
-  description: 'Firebase Auth with Next.js',
+  title: 'Qitt - Study Material Sharing',
+  description: 'Share and access study materials with your peers',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Qitt'
+  },
+}
+
+export const viewport = {
+  themeColor: '#4045ef',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 }
 
 export default function RootLayout({ children }) {

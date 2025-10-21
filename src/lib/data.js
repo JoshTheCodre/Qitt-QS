@@ -125,6 +125,16 @@ export const semesters = [
 // Quick Actions
 export const quickActions = [
   {
+    id: 'install',
+    icon: 'Download',
+    title: 'Install Qitt',
+    description: 'Access Materials offline',
+    cardBgColor: 'bg-purple-50',
+    iconBgColor: 'bg-purple-300',
+    iconColor: 'text-purple-700',
+    link: 'install',
+  },
+  {
     id: 'support',
     icon: 'FaWhatsapp',
     title: 'Need Support?',
@@ -132,7 +142,7 @@ export const quickActions = [
     cardBgColor: 'bg-green-50',
     iconBgColor: 'bg-green-300',
     iconColor: 'text-green-700',
-    link: 'https://wa.me/2348000000000',
+    link: 'whatsapp', // Special handler in QuickActions
   },
   {
     id: 'profile',
@@ -142,7 +152,7 @@ export const quickActions = [
     cardBgColor: 'bg-blue-50',
     iconBgColor: 'bg-blue-300',
     iconColor: 'text-blue-700',
-    link: '/profile',
+    link: 'profile',  // Special handler for profile card
   },
   {
     id: 'share',
@@ -243,3 +253,96 @@ export const getLabelByValue = (data, value) => {
     const item = data.find(item => item.value === value)
     return item ? item.label : value
 }
+
+
+const Departments = {
+    "Faculties": {
+      "Humanities": [
+        "English Studies",
+        "Foreign Languages and Literatures",
+        "History and Diplomatic Studies",
+        "Linguistics and Communication Studies",
+        "Philosophy",
+        "Religious and Cultural Studies",
+        "Theatre and Film Studies"
+      ],
+      "Social Sciences": [
+        "Economics",
+        "Geography and Environmental Management",
+        "Political and Administrative Studies",
+        "Sociology",
+        "Social Work"
+      ],
+      "Management Sciences": [
+        "Accounting",
+        "Finance and Banking",
+        "Management",
+        "Marketing",
+        "Hospitality Management and Tourism"
+      ],
+      "Education": [
+        "Adult and Non-Formal Education",
+        "Educational Foundations",
+        "Educational Management",
+        "Educational Psychology, Guidance and Counselling",
+        "Human Kinetics and Health Education",
+        "Library and Information Science",
+        "Early Childhood and Primary Education"
+      ],
+      "Science": [
+        "Animal and Environmental Biology",
+        "Biochemistry",
+        "Chemistry",
+        "Geology",
+        "Mathematics and Statistics",
+        "Microbiology",
+        "Physics",
+        "Plant Science and Biotechnology",
+        "Pure and Industrial Chemistry"
+      ],
+      "Engineering": [
+        "Chemical Engineering",
+        "Civil Engineering",
+        "Electrical/Electronic Engineering",
+        "Environmental Engineering",
+        "Mechanical Engineering",
+        "Petroleum Engineering",
+        "Gas Engineering"
+      ],
+      "College of Health Sciences": [
+        "Medicine and Surgery",
+        "Nursing Science",
+        "Human Anatomy",
+        "Human Physiology",
+        "Dentistry",
+        "Pharmacology",
+        "Medical Laboratory Science"
+      ],
+      "Pharmaceutical Sciences": [
+        "Pharmacy"
+      ],
+      "Agriculture": [
+        "Agricultural Economics and Extension",
+        "Animal Science",
+        "Crop and Soil Science",
+        "Fisheries",
+        "Forestry and Wildlife Management"
+      ],
+      "Law": [
+        "Law"
+      ],
+      "Environmental Sciences": [
+        "Architecture",
+        "Quantity Surveying",
+        "Estate Management",
+        "Urban and Regional Planning"
+      ],
+      "Computing": [
+        "Computer Science",
+        "Cyber Security",
+        "Information Technology"
+      ]
+    }
+  };
+  
+  export default Departments;

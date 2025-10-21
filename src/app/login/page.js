@@ -22,7 +22,8 @@ function LoginPage() {
     const [error, setError] = useState('')
 
     const handleChange = (e) => {
-        setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }))
+        const { id, value } = e.target
+        setFormData(prev => ({ ...prev, [id]: value }))
         if (error) setError('')
     }
 

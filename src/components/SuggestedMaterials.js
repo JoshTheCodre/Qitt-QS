@@ -83,6 +83,7 @@ export function SuggestedMaterials({
           <div key={material.id} className="flex-shrink-0 w-4/5 lg:w-2/3  sm:w-[calc(50%-6px)] lg:w-[calc(33.333%-8px)]">
             <SuggestedMaterialCard
               key={material.id}
+              id={material.id}
               code={material.courseCode || material.code}
               title={material.title || material.description}
               subtitle={material.department || material.subtitle}

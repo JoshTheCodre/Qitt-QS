@@ -13,6 +13,7 @@ import { useAuthStore } from "@/store/authStore"
 import toast, { Toaster } from "react-hot-toast"
 import { withPublic } from "@/components/hoc/withAuth"
 import { universities, departments, levels } from "@/lib/data"
+import Departments from "@/lib/data"
 
 function SignUpPage() {
     const router = useRouter()
@@ -187,7 +188,7 @@ function SignUpPage() {
                             </Select>
                         </div>
 
-                        {/* Department */}
+                        {/* Faculty and Department */}
                         <div className="space-y-2">
                             <Label className="text-sm font-medium text-gray-900">
                                 Department <span className="text-red-500">*</span>
@@ -199,11 +200,18 @@ function SignUpPage() {
                                         <SelectValue placeholder="Select Your Department" />
                                     </div>
                                 </SelectTrigger>
-                                <SelectContent>
-                                    {departments.map((dept) => (
-                                        <SelectItem key={dept.value} value={dept.value}>
-                                            {dept.label}
-                                        </SelectItem>
+                                <SelectContent className="max-h-[300px]">
+                                    {Object.entries(Departments.Faculties).map(([faculty, depts]) => (
+                                        <div key={faculty}>
+                                            <div className="px-2 py-1.5 text-sm font-semibold text-gray-500 bg-gray-50">
+                                                {faculty}
+                                            </div>
+                                            {depts.map((dept) => (
+                                                <SelectItem key={dept} value={dept}>
+                                                    {dept}
+                                                </SelectItem>
+                                            ))}
+                                        </div>
                                     ))}
                                 </SelectContent>
                             </Select>
